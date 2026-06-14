@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="COOKIE — Handcrafted pastries, premium cakes, and rich hot chocolate made fresh every day. Order online for same-day delivery.">
+    <meta name="keywords" content="bakery, cakes, pastries, hot chocolate, cookies, desserts, premium bakery, artisan cakes, fresh pastries">
+    <meta name="author" content="COOKIE Bakery & Café">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="COOKIE — Premium Bakery & Café">
+    <meta property="og:description" content="Handcrafted pastries, premium cakes, and rich hot chocolate made fresh every day.">
+    <meta property="og:image" content="images/hero-bakery.png">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="COOKIE — Premium Bakery & Café">
+    <meta name="twitter:description" content="Handcrafted pastries, premium cakes, and rich hot chocolate made fresh every day.">
+    
+    <title>COOKIE — Premium Bakery & Café | Handcrafted Pastries & Cakes</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Bakery",
+        "name": "COOKIE",
+        "description": "Premium Bakery & Café — Handcrafted pastries, premium cakes, and rich hot chocolate made fresh every day.",
+        "image": "images/hero-bakery.png",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "42 Artisan Lane, Downtown",
+            "addressLocality": "City Center",
+            "postalCode": "10001"
+        },
+        "telephone": "+1-234-567-8900",
+        "openingHoursSpecification": [
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+                "opens": "07:00",
+                "closes": "22:00"
+            },
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Saturday","Sunday"],
+                "opens": "08:00",
+                "closes": "23:00"
+            }
+        ],
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.9",
+            "reviewCount": "10000"
+        },
+        "priceRange": "$$"
+    }
+    </script>
+</head>
+<body>
+
+    <!-- ============================================ -->
+    <!-- NAVIGATION -->
+    <!-- ============================================ -->
+    <nav class="navbar" id="navbar">
+        <div class="container navbar__inner">
+            <a href="#" class="navbar__logo">
+                <span>🍪</span> COOKIE
+            </a>
+            <ul class="navbar__menu nav-links" id="nav-links">
+                <li><a href="#menu" class="navbar__link">Menu</a></li>
+                <li><a href="#best-sellers" class="navbar__link">Best Sellers</a></li>
+                <li><a href="#cakes" class="navbar__link">Cakes</a></li>
+                <li><a href="#hot-chocolate" class="navbar__link">Hot Chocolate</a></li>
+                <li><a href="#our-story" class="navbar__link">Our Story</a></li>
+                <li><a href="#contact" class="navbar__link">Contact</a></li>
+            </ul>
+            <div class="navbar__actions">
+                <button class="navbar__cart" id="nav-cart" aria-label="Shopping cart">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/>
+                        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+                    </svg>
+                    <span class="navbar__cart-badge cart-count" id="cart-count">0</span>
+                </button>
+                <a href="#menu" class="btn btn--primary btn--sm navbar__cta">Order Now</a>
+            </div>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <main>
+        <!-- ============================================ -->
+        <!-- HERO SECTION -->
+        <!-- ============================================ -->
+        <section class="hero section-padding" id="hero">
+            
+            <!-- Cinematic Motion Background -->
+            <div class="hero__cinematic-bg">
+                <div class="hero__cinematic-image" style="background-image: url('images/hero-bakery.png');"></div>
+                <div class="hero__grain"></div>
+                <div class="hero__light-leak"></div>
+                <div class="hero__dust">
+                    <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+                </div>
+            </div>
+
+            <!-- Enhanced Steam Animation -->
+            <div class="hero__steam hero__steam--enhanced">
+                <span></span><span></span><span></span><span></span><span></span>
+            </div>
+
+            <div class="hero__content">
+                <span class="hero__badge fade-in-up">✦ Premium Bakery & Café ✦</span>
+                <h1 class="hero__title fade-in-up">Every Bite Feels<br><span class="accent">Like Home</span></h1>
+                <p class="hero__subtitle fade-in-up">Handcrafted pastries, premium cakes, and rich hot chocolate<br>made fresh every day.</p>
+                <div class="hero__buttons fade-in-up">
+                    <a href="#menu" class="btn btn--primary btn--lg" id="hero-order-btn">
+                        <span>Order Now</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                    </a>
+                    <a href="#best-sellers" class="btn btn--secondary btn--lg" id="hero-menu-btn">View Menu</a>
+                </div>
+            </div>
+
+            <div class="hero__trust">
+                <div class="container hero__trust-inner">
+                    <div class="hero__trust-item fade-in-up">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/><path d="M8 12l3 3 5-6"/></svg>
+                        <span>Freshly Baked Daily</span>
+                    </div>
+                    <div class="hero__trust-item fade-in-up">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l2.4 7.4H22l-6 4.6 2.3 7L12 16.4 5.7 21l2.3-7L2 9.4h7.6z"/></svg>
+                        <span>Premium Ingredients</span>
+                    </div>
+                    <div class="hero__trust-item fade-in-up">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 3 20 16 16 16"/><circle cx="5" cy="19" r="2"/><circle cx="17" cy="19" r="2"/></svg>
+                        <span>Same-Day Delivery</span>
+                    </div>
+                    <div class="hero__trust-item fade-in-up">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l2.4 7.4H22l-6 4.6 2.3 7L12 16.4 5.7 21l2.3-7L2 9.4h7.6z"/></svg>
+                        <span>5-Star Reviews</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================ -->
+        <!-- SOCIAL PROOF -->
+        <!-- ============================================ -->
+        <section class="social-proof section-padding" id="social-proof">
+            <div class="container">
+                <div class="social-proof__grid">
+                    <div class="social-proof__stat fade-in-up">
+                        <span class="social-proof__number counter-number" data-target="10000">0</span>
+                        <span class="social-proof__label">Happy Customers</span>
+                    </div>
+                    <div class="social-proof__stat fade-in-up">
+                        <span class="social-proof__number counter-number" data-target="50000">0</span>
+                        <span class="social-proof__label">Desserts Served</span>
+                    </div>
+                    <div class="social-proof__stat fade-in-up">
+                        <span class="social-proof__number">4.9</span>
+                        <span class="social-proof__label">Star Rating</span>
+                    </div>
+                    <div class="social-proof__stat fade-in-up">
+                        <span class="social-proof__number">
+                            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                        </span>
+                        <span class="social-proof__label">Freshly Baked Daily</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================ -->
+        <!-- BEST SELLERS -->
+        <!-- ============================================ -->
+        <section class="best-sellers section-padding" id="best-sellers">
+            <div class="container">
+                <div class="section-subtitle fade-in-up">— Our Finest Creations —</div>
+                <h2 class="section-title fade-in-up" id="menu">Best Sellers</h2>
+                <p class="section-subtitle fade-in-up">Discover the handcrafted favorites that keep our customers coming back for more.</p>
+                
+                <div class="best-sellers__grid">
+                    <!-- Product 1: Belgian Chocolate Cake -->
+                    <div class="product-card fade-in-up" id="product-chocolate-cake">
+                        <div class="product-card__image">
+                            <img src="images/chocolate-cake.png" alt="Belgian Chocolate Cake — Rich dark chocolate layers with ganache" class="product-image" loading="lazy">
+                            <span class="product-card__badge">Best Seller</span>
+                        </div>
+                        <div class="product-card__info">
+                            <h3 class="product-card__name">Belgian Chocolate Cake</h3>
+                            <p class="product-card__description">Three layers of rich Belgian chocolate with dark ganache, topped with artisan chocolate shavings.</p>
+                            <div class="product-card__footer">
+                                <span class="product-card__price">$38.00</span>
+                                <button class="product-card__add-to-cart add-to-cart" id="add-chocolate-cake" data-product="Belgian Chocolate Cake" aria-label="Add Belgian Chocolate Cake to cart">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 2: Red Velvet Cake -->
+                    <div class="product-card fade-in-up" id="product-red-velvet">
+                        <div class="product-card__image">
+                            <img src="images/red-velvet-cake.png" alt="Red Velvet Cake — Elegant red velvet with cream cheese frosting" class="product-image" loading="lazy">
+                            <span class="product-card__badge" style="background: var(--rose); color: var(--chocolate-dark);">New</span>
+                        </div>
+                        <div class="product-card__info">
+                            <h3 class="product-card__name">Red Velvet Cake</h3>
+                            <p class="product-card__description">Velvety smooth red velvet layers crowned with swirled cream cheese frosting and fresh berry garnish.</p>
+                            <div class="product-card__footer">
+                                <span class="product-card__price">$42.00</span>
+                                <button class="product-card__add-to-cart add-to-cart" id="add-red-velvet" data-product="Red Velvet Cake" aria-label="Add Red Velvet Cake to cart">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 3: Lotus Biscoff Pastry -->
+                    <div class="product-card fade-in-up" id="product-lotus">
+                        <div class="product-card__image">
+                            <img src="images/lotus-pastry.png" alt="Lotus Biscoff Pastry — Golden pastry with caramel drizzle" class="product-image" loading="lazy">
+                        </div>
+                        <div class="product-card__info">
+                            <h3 class="product-card__name">Lotus Biscoff Pastry</h3>
+                            <p class="product-card__description">Flaky golden puff pastry filled with caramelized Biscoff spread, drizzled with cookie butter glaze.</p>
+                            <div class="product-card__footer">
+                                <span class="product-card__price">$8.50</span>
+                                <button class="product-card__add-to-cart add-to-cart" id="add-lotus" data-product="Lotus Biscoff Pastry" aria-label="Add Lotus Biscoff Pastry to cart">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 4: Chocolate Croissant -->
+                    <div class="product-card fade-in-up" id="product-croissant">
+                        <div class="product-card__image">
+                            <img src="images/chocolate-croissant.png" alt="Chocolate Croissant — Flaky golden-brown with dark chocolate" class="product-image" loading="lazy">
+                            <span class="product-card__badge" style="background: var(--chocolate-medium); color: var(--white);">Popular</span>
+                        </div>
+                        <div class="product-card__info">
+                            <h3 class="product-card__name">Chocolate Croissant</h3>
+                            <p class="product-card__description">Buttery, golden-brown layers of French pastry encasing a heart of premium dark chocolate.</p>
+                            <div class="product-card__footer">
+                                <span class="product-card__price">$6.50</span>
+                                <button class="product-card__add-to-cart add-to-cart" id="add-croissant" data-product="Chocolate Croissant" aria-label="Add Chocolate Croissant to cart">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 5: Signature Hot Chocolate -->
+                    <div class="product-card fade-in-up" id="product-hot-chocolate">
+                        <div class="product-card__image">
+                            <img src="images/hot-chocolate.png" alt="Signature Hot Chocolate — Premium mug with rich cocoa foam" class="product-image" loading="lazy">
+                            <span class="product-card__badge" style="background: var(--chocolate-dark); color: var(--gold);">Signature</span>
+                        </div>
+                        <div class="product-card__info">
+                            <h3 class="product-card__name">Signature Hot Chocolate</h3>
+                            <p class="product-card__description">Velvety Belgian chocolate melted into steamed whole milk, crowned with hand-whipped cream and cocoa dust.</p>
+                            <div class="product-card__footer">
+                                <span class="product-card__price">$7.00</span>
+                                <button class="product-card__add-to-cart add-to-cart" id="add-hot-chocolate" data-product="Signature Hot Chocolate" aria-label="Add Signature Hot Chocolate to cart">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 6: Triple Chocolate Cookie -->
+                    <div class="product-card fade-in-up" id="product-cookie">
+                        <div class="product-card__image">
+                            <img src="images/triple-chocolate-cookie.png" alt="Triple Chocolate Cookie — Gooey cookie with three chocolates" class="product-image" loading="lazy">
+                        </div>
+                        <div class="product-card__info">
+                            <h3 class="product-card__name">Triple Chocolate Cookie</h3>
+                            <p class="product-card__description">A thick, chewy masterpiece loaded with dark, milk, and white chocolate chunks. Crisp edges, fudgy center.</p>
+                            <div class="product-card__footer">
+                                <span class="product-card__price">$4.50</span>
+                                <button class="product-card__add-to-cart add-to-cart" id="add-cookie" data-product="Triple Chocolate Cookie" aria-label="Add Triple Chocolate Cookie to cart">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================ -->
+        <!-- WHY COOKIE -->
+        <!-- ============================================ -->
+        <section class="why-cookie section-padding" id="why-cookie">
+            <div class="container">
+                <div class="section-subtitle fade-in-up">— What Makes Us Special —</div>
+                <h2 class="section-title fade-in-up">Why Customers Love COOKIE</h2>
+                
+                <div class="why-cookie__grid">
+                    <div class="feature-card fade-in-up">
+                        <div class="feature-card__icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707"/><circle cx="12" cy="12" r="4"/></svg>
+                        </div>
+                        <h3 class="feature-card__title">Freshly Baked Every Morning</h3>
+                        <p class="feature-card__description">Our ovens fire up before dawn. Every pastry, every cake, every cookie — made fresh that very morning.</p>
+                    </div>
+                    <div class="feature-card fade-in-up">
+                        <div class="feature-card__icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2l2.4 7.4H22l-6 4.6 2.3 7L12 16.4 5.7 21l2.3-7L2 9.4h7.6z"/></svg>
+                        </div>
+                        <h3 class="feature-card__title">Premium Imported Ingredients</h3>
+                        <p class="feature-card__description">Belgian chocolate, French butter, Madagascan vanilla — only the finest ingredients make the cut.</p>
+                    </div>
+                    <div class="feature-card fade-in-up">
+                        <div class="feature-card__icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+                        </div>
+                        <h3 class="feature-card__title">Rich Handcrafted Recipes</h3>
+                        <p class="feature-card__description">Perfected over years, our recipes blend tradition with innovation for flavors you won't find anywhere else.</p>
+                    </div>
+                    <div class="feature-card fade-in-up">
+                        <div class="feature-card__icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                        </div>
+                        <h3 class="feature-card__title">Expert Pastry Chefs</h3>
+                        <p class="feature-card__description">Trained in Europe's finest culinary schools, our chefs bring world-class technique to every creation.</p>
+                    </div>
+                    <div class="feature-card fade-in-up">
+                        <div class="feature-card__icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                        </div>
+                        <h3 class="feature-card__title">Beautiful Gift Packaging</h3>
+                        <p class="feature-card__description">Every box is a gift. Our signature packaging makes every order feel like an occasion worth celebrating.</p>
+                    </div>
+                    <div class="feature-card fade-in-up">
+                        <div class="feature-card__icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 3 20 16 16 16"/><circle cx="5" cy="19" r="2"/><circle cx="17" cy="19" r="2"/></svg>
+                        </div>
+                        <h3 class="feature-card__title">Fast Local Delivery</h3>
+                        <p class="feature-card__description">Same-day delivery across the city. Your fresh order arrives at your door while it's still warm.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================ -->
+        <!-- HOT CHOCOLATE SECTION -->
+        <!-- ============================================ -->
+        <section class="hot-chocolate section-padding" id="hot-chocolate" style="background-image: url('images/hot-chocolate.png');">
+            <div class="hot-chocolate__steam">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="container hot-chocolate__inner">
+                <div class="hot-chocolate__text">
+                    <span class="hot-chocolate__label fade-in-up">— Our Signature Drink —</span>
+                    <h2 class="hot-chocolate__title fade-in-up">Not Just Hot Chocolate.<br><span class="accent" style="color: var(--gold);">An Experience.</span></h2>
+                    <p class="hot-chocolate__description fade-in-up">
+                        Crafted with single-origin Belgian chocolate, slowly melted into creamy steamed milk. 
+                        Each cup is a ritual — rich, velvety, and deeply comforting. Topped with hand-whipped cream 
+                        and a dusting of Ghanaian cocoa powder.
+                    </p>
+                    <ul class="fade-in-up" style="margin-bottom: 2rem;">
+                        <li style="display: flex; align-items: center; gap: 0.6em; color: rgba(255,255,255,0.85); margin-bottom: 0.6em; font-size: var(--fs-small);">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+                            Single-origin Belgian chocolate
+                        </li>
+                        <li style="display: flex; align-items: center; gap: 0.6em; color: rgba(255,255,255,0.85); margin-bottom: 0.6em; font-size: var(--fs-small);">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+                            Steamed whole milk
+                        </li>
+                        <li style="display: flex; align-items: center; gap: 0.6em; color: rgba(255,255,255,0.85); margin-bottom: 0.6em; font-size: var(--fs-small);">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+                            Hand-whipped cream topping
+                        </li>
+                        <li style="display: flex; align-items: center; gap: 0.6em; color: rgba(255,255,255,0.85); font-size: var(--fs-small);">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+                            Ghanaian cocoa dust finish
+                        </li>
+                    </ul>
+                    <a href="#menu" class="btn btn--primary fade-in-up" id="hc-order-btn">
+                        <span>Order Your Cup Today</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                    </a>
+                </div>
+                <div class="hot-chocolate__image fade-in-up">
+                    <img src="images/hot-chocolate.png" alt="Premium hot chocolate with steam" loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================ -->
+        <!-- CAKE COLLECTION -->
+        <!-- ============================================ -->
+        <section class="cake-collection section-padding" id="cakes">
+            <div class="container">
+                <div class="section-subtitle fade-in-up">— Our Collection —</div>
+                <h2 class="section-title fade-in-up">Luxury Cake Gallery</h2>
+                <p class="section-subtitle fade-in-up">From birthdays to weddings, every celebration deserves a showstopping centerpiece.</p>
+
+                <div class="cake-collection__filters filter-tabs fade-in-up">
+                    <button class="cake-collection__filter-btn filter-btn active" data-filter="all">All</button>
+                    <button class="cake-collection__filter-btn filter-btn" data-filter="birthday">Birthday</button>
+                    <button class="cake-collection__filter-btn filter-btn" data-filter="celebration">Celebration</button>
+                    <button class="cake-collection__filter-btn filter-btn" data-filter="wedding">Wedding</button>
+                    <button class="cake-collection__filter-btn filter-btn" data-filter="chocolate">Chocolate</button>
+                    <button class="cake-collection__filter-btn filter-btn" data-filter="custom">Custom</button>
+                </div>
+
+                <div class="cake-collection__gallery">
+                    <div class="cake-card gallery-item fade-in-up" data-category="chocolate">
+                        <img src="images/chocolate-cake.png" alt="Belgian Chocolate Layer Cake" loading="lazy">
+                        <div class="cake-card__overlay">
+                            <h3 class="cake-card__name">Belgian Chocolate Cake</h3>
+                            <span class="cake-card__price">From $38</span>
+                        </div>
+                    </div>
+                    <div class="cake-card gallery-item fade-in-up" data-category="celebration">
+                        <img src="images/red-velvet-cake.png" alt="Red Velvet Celebration Cake" loading="lazy">
+                        <div class="cake-card__overlay">
+                            <h3 class="cake-card__name">Red Velvet Celebration</h3>
+                            <span class="cake-card__price">From $42</span>
+                        </div>
+                    </div>
+                    <div class="cake-card gallery-item fade-in-up" data-category="birthday">
+                        <img src="images/chocolate-cake.png" alt="Birthday Chocolate Fantasy" loading="lazy">
+                        <div class="cake-card__overlay">
+                            <h3 class="cake-card__name">Birthday Chocolate Fantasy</h3>
+                            <span class="cake-card__price">From $45</span>
+                        </div>
+                    </div>
+                    <div class="cake-card gallery-item fade-in-up" data-category="wedding">
+                        <img src="images/red-velvet-cake.png" alt="Elegant Wedding Cake" loading="lazy">
+                        <div class="cake-card__overlay">
+                            <h3 class="cake-card__name">Elegant Wedding Cake</h3>
+                            <span class="cake-card__price">From $120</span>
+                        </div>
+                    </div>
+                    <div class="cake-card gallery-item fade-in-up" data-category="chocolate">
+                        <img src="images/triple-chocolate-cookie.png" alt="Chocolate Truffle Cake" loading="lazy">
+                        <div class="cake-card__overlay">
+                            <h3 class="cake-card__name">Chocolate Truffle Cake</h3>
+                            <span class="cake-card__price">From $50</span>
+                        </div>
+                    </div>
+                    <div class="cake-card gallery-item fade-in-up" data-category="custom">
+                        <img src="images/chocolate-cake.png" alt="Custom Design Cake" loading="lazy">
+                        <div class="cake-card__overlay">
+                            <h3 class="cake-card__name">Custom Design Cake</h3>
+                            <span class="cake-card__price">From $55</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================ -->
+        <!-- LIMITED-TIME OFFER -->
+        <!-- ============================================ -->
+        <section class="limited-offer section-padding" id="limited-offer">
+            <div class="container">
+                <div class="limited-offer__content fade-in-up">
+                    <span class="limited-offer__eyebrow">🔥 Limited Time Offer</span>
+                    <h2 class="limited-offer__title">Today's Special</h2>
+                    <p class="limited-offer__subtitle">Buy Any Cake and Get <strong>20% Off</strong> Hot Chocolate</p>
+                    
+                    <div class="limited-offer__timer" id="countdown-timer">
+                        <div class="timer-box">
+                            <span class="timer-box__digits" id="countdown-hours">00</span>
+                            <span class="timer-box__label">Hours</span>
+                        </div>
+                        <span class="timer-separator">:</span>
+                        <div class="timer-box">
+                            <span class="timer-box__digits" id="countdown-minutes">00</span>
+                            <span class="timer-box__label">Minutes</span>
+                        </div>
+                        <span class="timer-separator">:</span>
+                        <div class="timer-box">
+                            <span class="timer-box__digits" id="countdown-seconds">00</span>
+                            <span class="timer-box__label">Seconds</span>
+                        </div>
+                    </div>
+                    
+                    <a href="#menu" class="btn btn--primary btn--pulse" id="offer-cta">
+                        <span>Claim This Offer</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                    </a>
+                    <p style="font-size: var(--fs-caption); color: rgba(255,255,255,0.4); margin-top: 1.5rem;">*Offer valid while supplies last. Cannot be combined with other promotions.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================ -->
+        <!-- CUSTOMER REVIEWS -->
+        <!-- ============================================ -->
+        <section class="reviews section-padding" id="reviews">
+            <div class="container">
+                <div class="section-subtitle fade-in-up">— What Our Customers Say —</div>
+                <h2 class="section-title fade-in-up">Loved by Thousands</h2>
+                
+                <div class="reviews__grid">
+                    <div class="review-card fade-in-up">
+                        <div class="review-card__stars">
+                            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                        </div>
+                        <p class="review-card__text">"The best chocolate cake I've ever tasted. Rich, moist, and absolutely heavenly. Every bite was pure bliss."</p>
+                        <div class="review-card__author">
+                            <div class="review-card__avatar" style="background: linear-gradient(135deg, #C8A96E, #D4A574); display: flex; align-items: center; justify-content: center; color: #fff; font-weight: 700;">S</div>
+                            <div>
+                                <span class="review-card__name">Sarah Mitchell</span><br>
+                                <span class="review-card__role">Verified Customer</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="review-card fade-in-up">
+                        <div class="review-card__stars">
+                            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                        </div>
+                        <p class="review-card__text">"The hot chocolate is absolutely unforgettable. I've tried dozens of places, but nothing compares to COOKIE's signature cup."</p>
+                        <div class="review-card__author">
+                            <div class="review-card__avatar" style="background: linear-gradient(135deg, #6B3A2A, #4A2C2A); display: flex; align-items: center; justify-content: center; color: #fff; font-weight: 700;">M</div>
+                            <div>
+                                <span class="review-card__name">Michael Torres</span><br>
+                                <span class="review-card__role">Verified Customer</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="review-card fade-in-up">
+                        <div class="review-card__stars">
+                            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                        </div>
+                        <p class="review-card__text">"Every pastry tastes fresh and homemade. The croissants are flaky perfection, and the Biscoff pastry is to die for!"</p>
+                        <div class="review-card__author">
+                            <div class="review-card__avatar" style="background: linear-gradient(135deg, #E8B4B8, #D4A574); display: flex; align-items: center; justify-content: center; color: #fff; font-weight: 700;">A</div>
+                            <div>
+                                <span class="review-card__name">Amina Khan</span><br>
+                                <span class="review-card__role">Verified Customer</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="review-card fade-in-up">
+                        <div class="review-card__stars">
+                            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                        </div>
+                        <p class="review-card__text">"Ordered a custom birthday cake and it was stunning! Beautiful design, incredible taste, and delivered right on time."</p>
+                        <div class="review-card__author">
+                            <div class="review-card__avatar" style="background: linear-gradient(135deg, #C8A96E, #6B3A2A); display: flex; align-items: center; justify-content: center; color: #fff; font-weight: 700;">J</div>
+                            <div>
+                                <span class="review-card__name">James Chen</span><br>
+                                <span class="review-card__role">Verified Customer</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="review-card fade-in-up">
+                        <div class="review-card__stars">
+                            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                        </div>
+                        <p class="review-card__text">"The gift packaging alone made it worth it. My mom cried happy tears. The red velvet cake was the cherry on top!"</p>
+                        <div class="review-card__author">
+                            <div class="review-card__avatar" style="background: linear-gradient(135deg, #D4B88C, #E8B4B8); display: flex; align-items: center; justify-content: center; color: #fff; font-weight: 700;">L</div>
+                            <div>
+                                <span class="review-card__name">Layla Peterson</span><br>
+                                <span class="review-card__role">Verified Customer</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="review-card fade-in-up">
+                        <div class="review-card__stars">
+                            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                        </div>
+                        <p class="review-card__text">"Same-day delivery saved my anniversary! The dessert box was a masterpiece. COOKIE is now our go-to for every occasion."</p>
+                        <div class="review-card__author">
+                            <div class="review-card__avatar" style="background: linear-gradient(135deg, #4A2C2A, #C8A96E); display: flex; align-items: center; justify-content: center; color: #fff; font-weight: 700;">R</div>
+                            <div>
+                                <span class="review-card__name">Robert Davis</span><br>
+                                <span class="review-card__role">Verified Customer</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================ -->
+        <!-- OUR STORY -->
+        <!-- ============================================ -->
+        <section class="our-story section-padding" id="our-story">
+            <div class="container">
+                <div class="our-story__inner">
+                    <div class="our-story__image fade-in-up">
+                        <img src="images/bakery-interior.png" alt="Inside COOKIE bakery — warm, inviting interior" loading="lazy">
+                    </div>
+                    <div class="our-story__text">
+                        <span class="our-story__eyebrow fade-in-up">— Our Story —</span>
+                        <h2 class="our-story__title fade-in-up">Baked With Passion<br>Since Day One</h2>
+                        <p class="our-story__description fade-in-up">
+                            COOKIE started with a simple dream: to create pastries so good, they'd make people close their eyes 
+                            and smile with every bite. What began as a tiny kitchen experiment between two friends became a beloved 
+                            neighborhood bakery that now serves thousands of happy customers.
+                        </p>
+                        <p class="our-story__description fade-in-up">
+                            Every morning, our team of passionate bakers arrives before sunrise. The aroma of fresh butter melting 
+                            into golden croissants, the rich scent of Belgian chocolate being tempered, the warmth of ovens bringing 
+                            dough to life — this is the magic that happens behind our doors.
+                        </p>
+                        <div class="our-story__timeline fade-in-up">
+                            <div class="timeline-item">
+                                <span class="timeline-item__year">2019</span>
+                                <span class="timeline-item__text">First kitchen, big dreams</span>
+                            </div>
+                            <div class="timeline-item">
+                                <span class="timeline-item__year">2020</span>
+                                <span class="timeline-item__text">Opened our first café</span>
+                            </div>
+                            <div class="timeline-item">
+                                <span class="timeline-item__year">2022</span>
+                                <span class="timeline-item__text">10,000 happy customers</span>
+                            </div>
+                            <div class="timeline-item">
+                                <span class="timeline-item__year">2024</span>
+                                <span class="timeline-item__text">Launched online ordering</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================ -->
+        <!-- INSTAGRAM GALLERY -->
+        <!-- ============================================ -->
+        <section class="instagram section-padding" id="instagram">
+            <div class="container">
+                <div class="section-subtitle fade-in-up">— Follow Our Journey —</div>
+                <h2 class="section-title fade-in-up">@cookie.bakery</h2>
+            </div>
+            <div class="container">
+                <div class="instagram__grid">
+                    <div class="instagram__item fade-in-up">
+                        <img src="images/chocolate-cake.png" alt="COOKIE bakery chocolate cake" loading="lazy">
+                        <div class="instagram__item-overlay">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="white" stroke="none"/></svg>
+                        </div>
+                    </div>
+                    <div class="instagram__item fade-in-up">
+                        <img src="images/hot-chocolate.png" alt="COOKIE bakery hot chocolate" loading="lazy">
+                        <div class="instagram__item-overlay">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="white" stroke="none"/></svg>
+                        </div>
+                    </div>
+                    <div class="instagram__item fade-in-up">
+                        <img src="images/chocolate-croissant.png" alt="COOKIE bakery croissant" loading="lazy">
+                        <div class="instagram__item-overlay">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="white" stroke="none"/></svg>
+                        </div>
+                    </div>
+                    <div class="instagram__item fade-in-up">
+                        <img src="images/lotus-pastry.png" alt="COOKIE bakery lotus pastry" loading="lazy">
+                        <div class="instagram__item-overlay">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="white" stroke="none"/></svg>
+                        </div>
+                    </div>
+                    <div class="instagram__item fade-in-up">
+                        <img src="images/red-velvet-cake.png" alt="COOKIE bakery red velvet" loading="lazy">
+                        <div class="instagram__item-overlay">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="white" stroke="none"/></svg>
+                        </div>
+                    </div>
+                    <div class="instagram__item fade-in-up">
+                        <img src="images/triple-chocolate-cookie.png" alt="COOKIE bakery triple chocolate cookie" loading="lazy">
+                        <div class="instagram__item-overlay">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="white" stroke="none"/></svg>
+                        </div>
+                    </div>
+                    <div class="instagram__item fade-in-up">
+                        <img src="images/bakery-interior.png" alt="COOKIE bakery interior" loading="lazy">
+                        <div class="instagram__item-overlay">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="white" stroke="none"/></svg>
+                        </div>
+                    </div>
+                    <div class="instagram__item fade-in-up">
+                        <img src="images/hero-bakery.png" alt="COOKIE bakery hero spread" loading="lazy">
+                        <div class="instagram__item-overlay">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="white" stroke="none"/></svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container" style="text-align: center; margin-top: 2rem;">
+                <a href="https://instagram.com" target="_blank" rel="noopener" class="btn btn--dark" id="instagram-cta">
+                    Share Your COOKIE Moment
+                </a>
+            </div>
+        </section>
+
+        <!-- ============================================ -->
+        <!-- FAQ -->
+        <!-- ============================================ -->
+        <section class="faq section-padding" id="faq">
+            <div class="container">
+                <div class="section-subtitle fade-in-up">— Got Questions? —</div>
+                <h2 class="section-title fade-in-up">Frequently Asked Questions</h2>
+                
+                <div class="faq__list">
+                    <div class="faq__item faq-item fade-in-up">
+                        <button class="faq__question faq-question" id="faq-1">
+                            <span>Do you offer same-day delivery?</span>
+                            <span class="faq__icon"></span>
+                        </button>
+                        <div class="faq__answer faq-answer">
+                            <div class="faq__answer-inner">
+                                <p>Yes! We offer same-day delivery for orders placed before 2:00 PM. Our delivery team ensures your 
+                                pastries and cakes arrive fresh and beautifully presented. Delivery is available across the city.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="faq__item faq-item fade-in-up">
+                        <button class="faq__question faq-question" id="faq-2">
+                            <span>Can I customize cakes?</span>
+                            <span class="faq__icon"></span>
+                        </button>
+                        <div class="faq__answer faq-answer">
+                            <div class="faq__answer-inner">
+                                <p>Absolutely! We specialize in custom cakes for all occasions — birthdays, weddings, anniversaries, and 
+                                corporate events. Contact us via WhatsApp or email with your vision, and our pastry chefs will bring it 
+                                to life. Custom orders require a minimum of 48 hours advance notice.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="faq__item faq-item fade-in-up">
+                        <button class="faq__question faq-question" id="faq-3">
+                            <span>What are your delivery timings?</span>
+                            <span class="faq__icon"></span>
+                        </button>
+                        <div class="faq__answer faq-answer">
+                            <div class="faq__answer-inner">
+                                <p>Our delivery windows are 10:00 AM – 1:00 PM (morning batch), 2:00 PM – 5:00 PM (afternoon batch), 
+                                and 6:00 PM – 9:00 PM (evening batch). You can select your preferred time slot during checkout.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="faq__item faq-item fade-in-up">
+                        <button class="faq__question faq-question" id="faq-4">
+                            <span>Do you take bulk orders?</span>
+                            <span class="faq__icon"></span>
+                        </button>
+                        <div class="faq__answer faq-answer">
+                            <div class="faq__answer-inner">
+                                <p>Yes, we love catering for events! Whether it's a corporate gathering, wedding reception, or large 
+                                celebration, we offer bulk discounts on orders of 20+ items. Reach out to us for a custom quote.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="faq__item faq-item fade-in-up">
+                        <button class="faq__question faq-question" id="faq-5">
+                            <span>How can I place an order?</span>
+                            <span class="faq__icon"></span>
+                        </button>
+                        <div class="faq__answer faq-answer">
+                            <div class="faq__answer-inner">
+                                <p>You can order directly through our website, send us a WhatsApp message, call us, or visit our café 
+                                in person. For the fastest experience, use our online ordering system — it takes less than 2 minutes!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================ -->
+        <!-- LEAD CAPTURE -->
+        <!-- ============================================ -->
+        <section class="lead-capture section-padding" id="lead-capture">
+            <div class="container">
+                <div class="lead-capture__content fade-in-up">
+                    <h2 class="lead-capture__title">Get <span style="text-decoration: underline; text-decoration-color: var(--espresso);">10% Off</span> Your First Order</h2>
+                    <p class="lead-capture__subtitle">Join the COOKIE family and receive an exclusive discount code straight to your inbox. Plus, be the first to know about seasonal specials.</p>
+                    <form class="lead-capture__form" id="lead-capture-form">
+                        <input type="text" class="lead-capture__input" id="lead-name" name="name" placeholder="Your Name" required aria-label="Your name">
+                        <input type="email" class="lead-capture__input" id="lead-email" name="email" placeholder="Your Email" required aria-label="Your email address">
+                        <input type="tel" class="lead-capture__input" id="lead-phone" name="phone" placeholder="Phone Number" aria-label="Your phone number">
+                        <button type="submit" class="lead-capture__submit" id="lead-submit">Unlock My Discount →</button>
+                    </form>
+                    <p class="lead-capture__disclaimer">We respect your privacy. Unsubscribe anytime.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================ -->
+        <!-- FINAL CTA -->
+        <!-- ============================================ -->
+        <section class="final-cta section-padding" id="final-cta" style="background-image: url('images/hero-bakery.png');">
+            <div class="container final-cta__content">
+                <span class="hero__badge fade-in-up" style="color: var(--gold); border-color: rgba(200,169,110,0.4);">✦ Don't Wait ✦</span>
+                <h2 class="final-cta__title fade-in-up">Your Next Favorite Dessert<br><span class="accent" style="color: var(--gold);">Is Waiting.</span></h2>
+                <p class="final-cta__subtitle fade-in-up">Fresh pastries, handcrafted cakes, and rich hot chocolate<br>delivered straight to your door.</p>
+                <div class="final-cta__buttons fade-in-up">
+                    <a href="#menu" class="btn btn--primary btn--lg" id="final-order-btn">
+                        <span>Order Now</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                    </a>
+                    <a href="#contact" class="btn btn--secondary btn--lg" id="final-contact-btn">Contact Us</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ============================================ -->
+    <!-- FOOTER -->
+    <!-- ============================================ -->
+    <footer class="footer section-padding" id="contact">
+        <div class="container">
+            <div class="footer__main">
+                <div class="footer__brand">
+                    <div class="footer__logo"><span>🍪</span> COOKIE</div>
+                    <p class="footer__brand-text">Handcrafted with love, baked with passion. COOKIE brings you the finest pastries, cakes, and hot chocolate — made fresh every single day.</p>
+                    <div class="footer__social">
+                        <a href="#" aria-label="Facebook" class="footer__social-link">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                        </a>
+                        <a href="#" aria-label="Instagram" class="footer__social-link">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg>
+                        </a>
+                        <a href="#" aria-label="Twitter" class="footer__social-link">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg>
+                        </a>
+                        <a href="#" aria-label="TikTok" class="footer__social-link">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.88-2.89 2.89 2.89 0 0 1 2.88-2.89c.28 0 .54.04.79.1v-3.5a6.37 6.37 0 0 0-.79-.05A6.34 6.34 0 0 0 3.15 15a6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.34-6.34V8.7a8.27 8.27 0 0 0 4.76 1.5v-3.5h-1z"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer__col">
+                    <h3 class="footer__heading">Quick Links</h3>
+                    <ul class="footer__links">
+                        <li><a href="#menu">Our Menu</a></li>
+                        <li><a href="#best-sellers">Best Sellers</a></li>
+                        <li><a href="#cakes">Cake Gallery</a></li>
+                        <li><a href="#our-story">Our Story</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__col">
+                    <h3 class="footer__heading">Business Hours</h3>
+                    <ul class="footer__hours">
+                        <li>
+                            <span class="day">Mon — Fri</span>
+                            <span class="time">7:00 AM — 10:00 PM</span>
+                        </li>
+                        <li>
+                            <span class="day">Saturday</span>
+                            <span class="time">8:00 AM — 11:00 PM</span>
+                        </li>
+                        <li>
+                            <span class="day">Sunday</span>
+                            <span class="time">8:00 AM — 9:00 PM</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer__col">
+                    <h3 class="footer__heading">Contact Us</h3>
+                    <ul class="footer__contact">
+                        <li>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                            <span>42 Artisan Lane, Downtown<br>City Center, 10001</span>
+                        </li>
+                        <li>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                            <a href="tel:+12345678900">+1 (234) 567-8900</a>
+                        </li>
+                        <li>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                            <a href="mailto:hello@cookie.com">hello@cookie.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <p>&copy; 2024 COOKIE Bakery & Café. All rights reserved.</p>
+                <div class="footer__bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms & Conditions</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/12345678900?text=Hi%20COOKIE!%20I'd%20like%20to%20place%20an%20order." 
+       class="whatsapp-float" id="whatsapp-btn" target="_blank" rel="noopener" 
+       aria-label="Order via WhatsApp">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="white">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+        </svg>
+    </a>
+
+    <!-- Sticky Mobile CTA -->
+    <div class="sticky-mobile-cta" id="sticky-mobile-cta">
+        <a href="#menu" class="sticky-mobile-cta__btn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display: inline; vertical-align: middle; margin-right: 0.4em;"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+            Order Now
+        </a>
+    </div>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
